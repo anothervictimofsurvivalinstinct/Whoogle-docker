@@ -23,8 +23,7 @@ ENV PATH="/root/.local/bin:$PATH"
 
 RUN apk add \
     python3 \
-    py3-pip \
-    s6
+    py3-pip
 
 RUN python3 -m pip install --user requests
   
