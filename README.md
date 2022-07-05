@@ -8,7 +8,7 @@ Ya need docker
 
 2.`docker build -t victim/whoogle .` 
 
-3.`docker run --name=whoogle -d -p 8080:5000 -e IP=*YOUR_IP_HERE* victim/whoogle` 
+3.`docker run --name=whoogle -d -p 8080:5000 victim/whoogle` 
 
 ### Upcoming
 
