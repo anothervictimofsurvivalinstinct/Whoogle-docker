@@ -14,7 +14,8 @@ RUN apk add \
 
 #keep it from complaining about where it's installed
 ENV PATH="/root/.local/bin:$PATH"    
-RUN python3 -m pip install --user wheel whoogle-search
+#installing from master branch due to issue with the pip install creating internal server errors
+RUN python3 -m pip install --user https://github.com/benbusby/whoogle-search/archive/master.tar.gz
 
 FROM alpine:3.15
 
